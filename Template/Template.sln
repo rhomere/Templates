@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Api.Mvc", "Services.Api.Mvc\Services.Api.Mvc.csproj", "{96135645-1753-4ED1-BDC6-B87A35FAEA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Api.Mvc.Core", "Services.Api.Mvc.Core\Services.Api.Mvc.Core.csproj", "{B2D463E8-1E31-476A-9A54-E9D975AD33D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Api.Mvc.Core", "Services.Api.Mvc.Core\Services.Api.Mvc.Core.csproj", "{99BC1C0D-5BB4-4816-B4AA-52E4456741D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{96135645-1753-4ED1-BDC6-B87A35FAEA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96135645-1753-4ED1-BDC6-B87A35FAEA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96135645-1753-4ED1-BDC6-B87A35FAEA60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2D463E8-1E31-476A-9A54-E9D975AD33D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2D463E8-1E31-476A-9A54-E9D975AD33D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2D463E8-1E31-476A-9A54-E9D975AD33D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2D463E8-1E31-476A-9A54-E9D975AD33D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BC1C0D-5BB4-4816-B4AA-52E4456741D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BC1C0D-5BB4-4816-B4AA-52E4456741D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BC1C0D-5BB4-4816-B4AA-52E4456741D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BC1C0D-5BB4-4816-B4AA-52E4456741D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
