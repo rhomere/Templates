@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Services.Api.Mvc.Core
+namespace WebApp.Mvc.Core
 {
     public class Startup
     {

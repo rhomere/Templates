@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Services.Api.Mvc.Core
+namespace WebApp.Mvc.Core
 {
     public class Program
     {
