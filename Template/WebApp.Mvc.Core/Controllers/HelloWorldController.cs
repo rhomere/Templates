@@ -7,7 +7,7 @@ using System.Text.Encodings.Web;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Services.Api.Mvc.Core.Controllers
+namespace WebApp.Mvc.Net.Core.Controllers
 {
     public class HelloWorldController : Controller
     {
