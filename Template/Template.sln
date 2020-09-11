@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Mvc.Core", "WebApp.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Mvc.Net", "WebApp.Mvc.Net\WebApp.Mvc.Net.csproj", "{96135645-1753-4ED1-BDC6-B87A35FAEA60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Api.Core", "Services.Api.Core\Services.Api.Core.csproj", "{92DEEAC7-9872-42CD-8551-BC2854E6B714}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{96135645-1753-4ED1-BDC6-B87A35FAEA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96135645-1753-4ED1-BDC6-B87A35FAEA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96135645-1753-4ED1-BDC6-B87A35FAEA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DEEAC7-9872-42CD-8551-BC2854E6B714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DEEAC7-9872-42CD-8551-BC2854E6B714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DEEAC7-9872-42CD-8551-BC2854E6B714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DEEAC7-9872-42CD-8551-BC2854E6B714}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
