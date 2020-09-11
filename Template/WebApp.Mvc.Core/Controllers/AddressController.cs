@@ -10,6 +10,9 @@ using WebApp.Mvc.Core.Models;
 
 namespace WebApp.Mvc.Core.Controllers
 {
+    /// <summary>
+    /// AddressController
+    /// </summary>
     public class AddressController : Controller
     {
         private readonly SalesContext _context;
@@ -19,12 +22,21 @@ namespace WebApp.Mvc.Core.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Get Addresses
+        /// </summary>
+        /// <returns></returns>
         // GET: Address
         public async Task<IActionResult> Index()
         {
             return View(await _context.Addresses.ToListAsync());
         }
 
+        /// <summary>
+        /// Get Details
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: Address/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -43,12 +55,21 @@ namespace WebApp.Mvc.Core.Controllers
             return View(address);
         }
 
+        /// <summary>
+        /// Create Address
+        /// </summary>
+        /// <returns></returns>
         // GET: Address/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        /// <summary>
+        /// Post Create Address
+        /// </summary>
+        /// <param name="address"></param>
+        /// <returns></returns>
         // POST: Address/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -65,6 +86,11 @@ namespace WebApp.Mvc.Core.Controllers
             return View(address);
         }
 
+        /// <summary>
+        /// Get Edit Address
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: Address/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -81,6 +107,12 @@ namespace WebApp.Mvc.Core.Controllers
             return View(address);
         }
 
+        /// <summary>
+        /// Post Edit Address
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="address"></param>
+        /// <returns></returns>
         // POST: Address/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -116,6 +148,11 @@ namespace WebApp.Mvc.Core.Controllers
             return View(address);
         }
 
+        /// <summary>
+        /// Get Delete Address
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: Address/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -134,6 +171,11 @@ namespace WebApp.Mvc.Core.Controllers
             return View(address);
         }
 
+        /// <summary>
+        /// Post DeleteConfirmed
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // POST: Address/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
