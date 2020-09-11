@@ -10,6 +10,7 @@ using WebApp.Mvc.Core.Models;
 
 namespace WebApp.Mvc.Core.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomersController : ControllerBase
@@ -21,6 +22,10 @@ namespace WebApp.Mvc.Core.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Gets all Customers
+        /// </summary>
+        /// <returns></returns>
         // GET: api/Customers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
@@ -28,6 +33,11 @@ namespace WebApp.Mvc.Core.Controllers
             return await _context.Customers.ToListAsync();
         }
 
+        /// <summary>
+        /// Gets specific Customer by Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: api/Customers/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Customer>> GetCustomer(int id)
@@ -42,6 +52,12 @@ namespace WebApp.Mvc.Core.Controllers
             return customer;
         }
 
+        /// <summary>
+        /// I think this updates a Customer
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="customer"></param>
+        /// <returns></returns>
         // PUT: api/Customers/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
@@ -74,10 +90,40 @@ namespace WebApp.Mvc.Core.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Adds new Customer
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// 
+        ///     POST /Customer
+        ///     {
+        ///         "NameStyle": true,
+        ///         "Title": "Ms.",
+        ///         "FirstName": "Eleese",
+        ///         "MiddleName": null,
+        ///         "LastName": "Sinnott",
+        ///         "Suffix": null,
+        ///         "CompanyName": null,
+        ///         "SalesPerson": "Andrea",
+        ///         "EmailAddress": "esinnott@test.com",
+        ///         "Phone": "555-555-5555",
+        ///         "PasswordHash": "hash",
+        ///         "PasswordSalt": "salt",
+        ///         "RowGuid": "c8673deb-d8b5-42ac-be8e-e366c7a09367",
+        ///         "ModifiedDate": "2020-09-11"
+        ///     }
+        /// </remarks>
+        /// <param name="customer"></param>
+        /// <returns></returns>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // POST: api/Customers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
             _context.Customers.Add(customer);
@@ -86,6 +132,11 @@ namespace WebApp.Mvc.Core.Controllers
             return CreatedAtAction("GetCustomer", new { id = customer.CustomerId }, customer);
         }
 
+        /// <summary>
+        /// Deletes a Customer
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // DELETE: api/Customers/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Customer>> DeleteCustomer(int id)
