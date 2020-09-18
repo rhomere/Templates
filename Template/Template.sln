@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Mvc.Net", "WebApp.Mv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Api.Core", "Services.Api.Core\Services.Api.Core.csproj", "{92DEEAC7-9872-42CD-8551-BC2854E6B714}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angularjs", "Angularjs\Angularjs.csproj", "{AC558222-48D9-48C4-B616-51900E5BC301}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{92DEEAC7-9872-42CD-8551-BC2854E6B714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92DEEAC7-9872-42CD-8551-BC2854E6B714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92DEEAC7-9872-42CD-8551-BC2854E6B714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC558222-48D9-48C4-B616-51900E5BC301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC558222-48D9-48C4-B616-51900E5BC301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC558222-48D9-48C4-B616-51900E5BC301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC558222-48D9-48C4-B616-51900E5BC301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
