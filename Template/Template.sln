@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Web", "Angular.Web\Angular.Web.csproj", "{DD7380F0-A22B-4D94-988D-83EA49AAFF7E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Api.Empty", "Services.Api\Services.Api.Empty.csproj", "{9D9C230B-90EE-4772-905D-2170B8F82154}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{280F181A-7151-4510-B580-745B392F64DB}"
@@ -13,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Mvc.Core", "WebApp.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Mvc.Net", "WebApp.Mvc.Net\WebApp.Mvc.Net.csproj", "{96135645-1753-4ED1-BDC6-B87A35FAEA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Api.Core", "Services.Api.Core\Services.Api.Core.csproj", "{92DEEAC7-9872-42CD-8551-BC2854E6B714}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Api.Core", "Services.Api.Core\Services.Api.Core.csproj", "{92DEEAC7-9872-42CD-8551-BC2854E6B714}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DD7380F0-A22B-4D94-988D-83EA49AAFF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD7380F0-A22B-4D94-988D-83EA49AAFF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD7380F0-A22B-4D94-988D-83EA49AAFF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD7380F0-A22B-4D94-988D-83EA49AAFF7E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D9C230B-90EE-4772-905D-2170B8F82154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D9C230B-90EE-4772-905D-2170B8F82154}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D9C230B-90EE-4772-905D-2170B8F82154}.Release|Any CPU.ActiveCfg = Release|Any CPU
