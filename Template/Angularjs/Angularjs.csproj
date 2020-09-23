@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Controllers\App.js" />
     <Content Include="Controllers\TestController.js" />
+    <Content Include="Index.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />

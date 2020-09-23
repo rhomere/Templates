@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJs Sample</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Controllers/App.js"></script>
+    <script src="Controllers/TestController.js"></script>
+</head>
+<body ng-app="myapp">
+    <div ng-controller="TestController">
+        <h1>Pizza Point</h1>
+        <h2>{{model.title}}</h2>
+        <!--<a href="#" ng-click="renameTitle('Away')">Click This to Change</a>-->
+        <!--<h3>The Current Date is: {{currentDate}}</h3>-->
+
+        <div><label><input type="radio" name="category" ng-click="changeMainDish('Cheese Pizza')" /> Cheese Pizza</label></div>
+        <div><label><input type="radio" name="category" ng-click="changeMainDish('Pepperoni Pizza')" /> Pepperoni Pizza</label></div>
+        <div><label><input type="radio" name="category" ng-click="changeMainDish('Margerita Pizza')" /> Margerita Pizza</label></div>
+        <div><label><input type="radio" name="category" ng-click="changeMainDish('BBQ Chicken Pizza')" /> BBQ Chicken Pizza</label></div>
+        <div><label><input type="radio" name="category" ng-click="changeMainDish('Combo Pizza')" /> Combo Pizza</label></div>
+
+        <div>
+            <h3>Selected Item</h3>
+            <pre>{{model.mainDish}}</pre>
+        </div>
+    </div>
+
+</body>
+</html>
