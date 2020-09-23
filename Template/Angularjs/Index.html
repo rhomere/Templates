@@ -2,29 +2,65 @@
 <html ng-app="myapp">
 <head>
     <meta charset="utf-8" />
-    <title>AngularJs Sample</title>
-    <script src="Scripts/angular.js"></script>
-    <script src="Controllers/App.js"></script>
-    <script src="Controllers/TestController.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body ng-app="myapp">
-    <div ng-controller="TestController">
-        <h1>Pizza Point</h1>
-        <h2>{{model.title}}</h2>
-        <!--<a href="#" ng-click="renameTitle('Away')">Click This to Change</a>-->
-        <!--<h3>The Current Date is: {{currentDate}}</h3>-->
+<body>
 
-        <div><label><input type="radio" name="category" ng-click="changeMainDish('Cheese Pizza')" /> Cheese Pizza</label></div>
-        <div><label><input type="radio" name="category" ng-click="changeMainDish('Pepperoni Pizza')" /> Pepperoni Pizza</label></div>
-        <div><label><input type="radio" name="category" ng-click="changeMainDish('Margerita Pizza')" /> Margerita Pizza</label></div>
-        <div><label><input type="radio" name="category" ng-click="changeMainDish('BBQ Chicken Pizza')" /> BBQ Chicken Pizza</label></div>
-        <div><label><input type="radio" name="category" ng-click="changeMainDish('Combo Pizza')" /> Combo Pizza</label></div>
+    <div class="search-box">
+        <input type="text" placeholder="Search here..."/>
+    </div>
 
-        <div>
-            <h3>Selected Item</h3>
-            <pre>{{model.mainDish}}</pre>
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    R.
+                </div>
+
+                <ul class="nav-items">
+                    <li>
+                        <a href="#">blog</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a class="nav-btn-container" href="#"></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 
+    <div class="header-container">
+        <div class="wrapper">
+            <header>
+                <div class="hero-content">
+                    <h1>Hi, I'm Darlene</h1>
+                    <p>
+                        I design beautiful websites &Aacute; mobile apps that modern trends demand
+                    </p>
+                    <a href="#">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="hero-image"></div>
+            </header>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <img  alt=""/>
+        <img  alt=""/>
+        <img  alt=""/>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
